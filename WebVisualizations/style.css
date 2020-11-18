@@ -2,17 +2,121 @@
   font-size: x-large;
 }
 
-back-color {
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.back-color {
   background-color: aqua;
 }
 
-div {
+.box-padding {
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
 }
 
-body {
+.page-color {
   background-color:lightblue;
+}
+
+.box-set {
+  height: 450;
+  background: lightcoral;
+}
+
+.box-Max-Temp-Comp{
+  position: relative;
+  top: 25%;
+  left: 5%;
+}
+
+.box-Humidity-Comp{
+  position: relative;
+  bottom: -6%;
+  left: 5%;
+}
+
+.box-Cloudiness-Comp{
+  position: relative;
+  top: 500;
+  right: -60%;
+}
+
+.box-Winds-Comp{
+  position: relative;
+  bottom: 50%;
+  right: -60%;
+}
+
+.image-size-Comp{
+  width: 75%;
+}
+
+.image-size-rpt{
+  width: 65%;
+  float: left;
+}
+
+.image-size-rpt2{
+  width: 250%;
+}
+
+
+.column-left {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 500px 500px; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.landing-grid-container {
+  display: grid;
+  float: left;
+  justify-content: space-evenly;
+  grid-template-columns: 700px 20px;
+  grid-gap: inherit;
+  padding: 20px;
+}
+
+.landing-grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 15px 5px;
+  font-size: 15px;
+}
+
+.landing-grid-container2 {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-gap: 40px 200px;
+  padding: 5px 5px;
+}
+
+.landing-grid-container2 > div {
+  text-align: right;
+  padding: 5px 5px;
+  font-size: 15px;
 }
