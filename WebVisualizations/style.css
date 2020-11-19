@@ -1,35 +1,12 @@
 .headers {
-  font-size: x-large;
-}
-
-
-.clearfix::after{
-  content: "";
-  display: table;
-  clear: both;
+  font-size: large;
 }
 
 .back-color {
   background-color: aqua;
 }
 
-.box-padding {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-.page-color {
-  background-color:lightblue;
-}
-
-.box-set {
-  height: 450;
-  background: lightcoral;
-}
-
-.box-Max-Temp-Comp{
+ .box-Max-Temp-Comp{
   position: relative;
   top: 25%;
   left: 5%;
@@ -58,20 +35,18 @@
 }
 
 .image-size-rpt{
-  width: 65%;
+  width: 75%;
   float: left;
+  padding: 10px;
 }
 
 .image-size-rpt2{
-  width: 250%;
+  width: 100%;
+  padding: 5px;
 }
 
 
-.column-left {
-  float: left;
-}
-
-.row::after {
+ .row::after {
   content: "";
   clear: both;
   display: table;
@@ -80,7 +55,7 @@
 .grid-container {
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: 500px 500px; /*Make the grid smaller than the container*/
+  grid-template-columns: 500px 500px;
   grid-gap: 10px;
   padding: 10px;
 }
@@ -96,27 +71,72 @@
   display: grid;
   float: left;
   justify-content: space-evenly;
-  grid-template-columns: 700px 20px;
-  grid-gap: inherit;
+  grid-template-columns: 150px 200px;
+  grid-gap: 100px 100px;
   padding: 20px;
+  border: 2px solid black;
+  height: 200px; */
+  width: 50%;
 }
 
 .landing-grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255);
   text-align: left;
   padding: 15px 5px;
-  font-size: 15px;
+  font-size: 0px;
 }
 
 .landing-grid-container2 {
   display: grid;
-  grid-template-columns: 100px 100px;
-  grid-gap: 40px 200px;
-  padding: 5px 5px;
+  float: left;
+  grid-template-columns: 150px 150px;
+  grid-gap: 10px 10px;
+  padding: 15px 15px;
+  border: 2px solid black;
 }
 
 .landing-grid-container2 > div {
   text-align: right;
   padding: 5px 5px;
   font-size: 15px;
+}
+
+.container {
+  position: center;
+  width: 70%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
